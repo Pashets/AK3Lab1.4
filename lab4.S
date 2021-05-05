@@ -140,9 +140,10 @@ jump5:
 	// 10: r2 = r2 + 1
 	add r2, #10
 	cmp r2, #100
-	
-	// 11: jump4
 	bpl jump4
+	
+	// 11: r1 = r1 & 2
+	and r1, #2
 	
 	bl program_c
 	
