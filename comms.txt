@@ -1,0 +1,25 @@
+PATH=$PATH:~/opt/xpack-qemu-arm-2.8.0-12/bin/
+
+make
+
+make qemu
+
+	gdb-multiarch firmware.elf
+
+	target extended-remote:1234
+
+	layout regs
+
+	step
+	
+2
+
+	gdb-multiarch firmware.elf
+
+	target extended-remote:1234
+
+	layout regs
+
+	continue
+
+
